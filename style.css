@@ -13,7 +13,7 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(3,6,18,0.7),rgba(3,6,20,0.8)),url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2018/11/dark-wallpapers.jpg);    
+    background:white
 }
 .wrapper{
     display: flex;
@@ -22,61 +22,74 @@ body{
 
 .wrapper .sidebar{
     position: fixed;
-    width: 250px;
+    width: 270px;
     height: 100%;
-    background: rgba(3,6,20,0.8);
-    padding: 30px 0;
-    font-weight: 200;
-    color: white;
-    font-family: "Bree serif";
+    background: #E5E5E5;
+    padding-top: 15%;
+    font-weight: 150;
+    font-family: "Archivo Black";
 }
 
+.name{
+    height: 250px;
+    width: 260px;
+    padding-left: 10px;
+    position:fixed;
+    z-index: 2;
+    background: linear-gradient(90deg,#06308a,#060b17);
+}
+
+.name h1{
+    padding-top: 30px;
+    font-size: 40px;
+    color: #FCA311;
+    margin-left: 20px;
+    font-family: "Archivo Black";
+}
+.name h4{
+    color: white;
+    padding-top: 20px;
+    font-size: 15px;
+    margin-left: 20px;
+    font-family: "Archivo Black";
+}
 .wrapper .sidebar ul{
-    padding-top: 40%;
+    padding-top: 3%;
     padding-bottom: 30%;
 }
 
 .wrapper .sidebar ul li{
-    padding: 10px;
     /*border-bottom: 1px solid rgba(0,0,0,0.05);
     border-top: 1px solid rgba(225,225,225,0.05 );*/
     font-size: large;
-    padding-top: 13%;
+    padding-top:18%;
     padding-left: 20%;
     
 }
 
 .wrapper .sidebar ul li a{
-    color: white;
-    font-size: 2.8svb;
+    color: #14213D;
+    font-size: 20px;
     text-decoration: none;
     display: block;
 }
 
-.wrapper .sidebar ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: white;
-    display: block;
-    margin: 5px;
-    transition: 0.5s;
-}
 
 .wrapper .sidebar ul li a .fa{
     width: 40px;
 }
 
 .wrapper .sidebar ul li:hover{
-    background:rgba(44, 45, 49, 0.8) ;
+    background:white ;
 }
 
-.wrapper .sidebar ul li:hover::after{
-    width:120px;
-}
 
 .wrapper .sidebar ul li:hover a{
-    color: white;
+    color: #FCA311;
+}
+
+.wrapper .sidebar ul li:hover a .fa{
+    color: #FCA311;
 }
 
 a:link {
@@ -95,40 +108,41 @@ a:visited{
 a:active{
     color:rgba(44, 45, 49, 0.8);
 }
-
-
-.banner{
-    position: relative;
-    width: 100%;
-    display: flex;
-    height: 100vh;
-    background-size: cover;
-    justify-content: flex-start;
+ 
+.main{
+    background:#060b17;
+    left: 270px;
+    height: 100%;
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    text-align: center;
 }
 
 .main h1{
-    width: 900px;
-    color: white;
-    font-family: "Bree serif";
+    width: 1000px;
+    color: #FCA311;
+    font-family: "Archivo Black";
     font-size: 6svh;
     padding-top: 20%;
-    padding-left: 45%;
+    padding-left: 10%;
     text-align: center;
 }
 
 .main p{
     width: 900px;
-    color: white;
+    color: #E5E5E5;
     font-family: "Bree serif";
     font-size: 4svh;
     padding-top: 5%;
-    padding-left: 45%;
+    padding-left: 10%;
     text-align: center;
-    line-height: 50px;
+    line-height: 60px;
 }
 
 #shade{
-    background: linear-gradient(to right,#70C1B3,#247B9F);
+    background: linear-gradient(to right,#06308a,#5199f7);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -139,3 +153,70 @@ a:active{
 #size{
     font-size: 3.2svh;
 }
+
+#contact{
+    color: white;
+    font-family: "Archivo Black";
+    background-color: #247B9F;
+    padding: 15px;
+    border: none;
+    margin-left: 30%;
+}
+
+.icons .fa{
+    /*background: linear-gradient(to right,#FCA311,#060b17);
+    -webkit-background-clip: text;
+    background-clip: text;*/
+    color: #E5E5E5;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-left: 0;
+    padding-top: 3.5%;
+    padding-right: 5%;
+}
+
+.media-icons a{
+    position: relative;
+    color: #E5E5E5;
+    font-size: 35px;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    transition-property: transform;
+}
+
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+
+.media-icons a:hover{
+    transform:  scale(1.5);
+    color: #FCA311;
+}
+
+/*.about{
+    background: white;
+    left: 270px;
+    height: 100%;
+    position: relative;
+    display: block;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+.about #nav{
+    width: 100%;
+    position: relative;
+    height: 100px;
+    color: #FCA311;
+    background: #14213D;
+}*/
