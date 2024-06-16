@@ -1,172 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-
+:root{
+    --main-color:#E5E5E5;
+    --change-color:#FCA311;
+}
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform:capitalize ;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    background:white
+    background: white;
+    padding-left: 30rem;
 }
-.wrapper{
+
+header{
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    background: #14213D;
     display: flex;
-    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 8rem 2rem;
+    width: 34rem;
+    text-align: center;
 }
 
-.wrapper .sidebar{
-    position: fixed;
-    width: 270px;
-    height: 100%;
-    background: #E5E5E5;
-    padding-top: 15%;
-    font-weight: 150;
-    font-family: "Archivo Black";
-}
-
-.name{
-    height: 250px;
-    width: 260px;
-    padding-left: 10px;
-    position:fixed;
-    z-index: 2;
-    background: linear-gradient(90deg,#06308a,#060b17);
-}
-
-.name h1{
-    padding-top: 30px;
-    font-size: 40px;
-    color: #FCA311;
-    margin-left: 20px;
-    font-family: "Archivo Black";
-}
-.name h4{
+header .logo{
+    text-transform: uppercase;
     color: white;
-    padding-top: 20px;
-    font-size: 15px;
-    margin-left: 20px;
-    font-family: "Archivo Black";
-}
-.wrapper .sidebar ul{
-    padding-top: 3%;
-    padding-bottom: 30%;
+    font-size: 3rem;
+    font-weight: bolder;
 }
 
-.wrapper .sidebar ul li{
-    /*border-bottom: 1px solid rgba(0,0,0,0.05);
-    border-top: 1px solid rgba(225,225,225,0.05 );*/
-    font-size: large;
-    padding-top:18%;
-    padding-left: 20%;
-    
+header .logo span{
+    text-transform: uppercase;
+    color:var(--change-color) ;
 }
 
-.wrapper .sidebar ul li a{
-    color: #14213D;
-    font-size: 20px;
-    text-decoration: none;
-    display: block;
-}
-
-
-.wrapper .sidebar ul li a .fa{
-    width: 40px;
-}
-
-.wrapper .sidebar ul li:hover{
-    background:white ;
-}
-
-
-.wrapper .sidebar ul li:hover a{
-    color: #FCA311;
-}
-
-.wrapper .sidebar ul li:hover a .fa{
-    color: #FCA311;
-}
-
-a:link {
-    color:rgba(44, 45, 49, 0.8);
-    text-decoration: none;
-}
-
-/*mouse over link*/
-
-/*visited link*/
-a:visited{
-    color: rgba(44, 45, 49, 0.8);
-}
-
-/*selected link*/
-a:active{
-    color:rgba(44, 45, 49, 0.8);
-}
- 
-.main{
-    background:#060b17;
-    left: 270px;
-    height: 100%;
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    text-align: center;
-}
-
-.main h1{
-    width: 1000px;
-    color: #FCA311;
-    font-family: "Archivo Black";
-    font-size: 6svh;
-    padding-top: 20%;
-    padding-left: 10%;
-    text-align: center;
-}
-
-.main p{
-    width: 900px;
-    color: #E5E5E5;
-    font-family: "Bree serif";
-    font-size: 4svh;
-    padding-top: 5%;
-    padding-left: 10%;
-    text-align: center;
-    line-height: 60px;
-}
-
-#shade{
-    background: linear-gradient(to right,#06308a,#5199f7);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-family: "Archivo Black";
-    font-size: 5svh;
-}
-
-#size{
-    font-size: 3.2svh;
-}
-
-#contact{
+header  .navbar a{
+    font-size: 2.5rem;
     color: white;
-    font-family: "Archivo Black";
-    background-color: #247B9F;
-    padding: 15px;
-    border: none;
-    margin-left: 30%;
+    display: block;
+    margin:2rem 0;
+}
+
+header  .navbar a:hover{
+    letter-spacing: 1rem;
+    color: var(--change-color);
 }
 
 .icons .fa{
-    /*background: linear-gradient(to right,#FCA311,#060b17);
-    -webkit-background-clip: text;
-    background-clip: text;*/
     color: #E5E5E5;
     margin: 0 10px;
     cursor: pointer;
@@ -179,9 +76,6 @@ a:active{
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding-left: 0;
-    padding-top: 3.5%;
-    padding-right: 5%;
 }
 
 .media-icons a{
@@ -189,7 +83,6 @@ a:active{
     color: #E5E5E5;
     font-size: 35px;
     transition: 0.3s;
-    padding-bottom: 20px;
     transition-property: transform;
 }
 
@@ -201,22 +94,3 @@ a:active{
     transform:  scale(1.5);
     color: #FCA311;
 }
-
-/*.about{
-    background: white;
-    left: 270px;
-    height: 100%;
-    position: relative;
-    display: block;
-    top: 0;
-    right: 0;
-    text-align: center;
-}
-
-.about #nav{
-    width: 100%;
-    position: relative;
-    height: 100px;
-    color: #FCA311;
-    background: #14213D;
-}*/
