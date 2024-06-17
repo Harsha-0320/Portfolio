@@ -21,7 +21,7 @@ html{
 }
 
 body{
-    background: white;
+    background: #E5E5E5;
     padding-left: 30rem;
 }
 
@@ -36,7 +36,6 @@ header{
     flex-flow: column;
     padding: 8rem 2rem;
     width: 34rem;
-    text-align: center;
 }
 
 header .logo{
@@ -63,12 +62,14 @@ header  .navbar a:hover{
     color: var(--change-color);
 }
 
-.icons .fa{
+header .follow a{
+    font-size: 2.5rem;
     color: #E5E5E5;
-    margin: 0 10px;
-    cursor: pointer;
-    padding: 10px;
+    margin: 0 .7rem;
+}
 
+header .follow a:hover{
+    color: var(--change-color);
 }
 
 .media-icons{
@@ -93,4 +94,118 @@ header  .navbar a:hover{
 .media-icons a:hover{
     transform:  scale(1.5);
     color: #FCA311;
+}
+
+#menu{
+    position: fixed;
+    top:1rem;
+    right: 1rem;
+    z-index: 1000;
+    background: #14213D;
+    color: #FCA311;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*************section homepage****************/
+section{
+    padding: 1rem 5%;
+    min-height: 100vh;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.banner .image{
+    flex: 1 1 40rem;
+}
+
+.banner .image img{
+    width: 100%;
+}
+
+.banner .content{
+    flex: 1 1 40rem;
+}
+
+.banner .content .hi{
+    font-size: 2rem;
+    color: black;
+}
+
+.banner .content h3{
+    font-size: 4.5rem;
+    color: #14213D;
+    text-transform: uppercase;
+}
+
+.banner .content h3 span{
+    font-size: 4.5rem;
+    color: #FCA311;
+    text-transform: uppercase;
+}
+
+.banner .content .info{
+    font-size: 2.5rem;
+    color: black;
+    padding:.5rem 0;
+}
+
+.banner .content .text{
+    font-size: 1.7rem;
+    color: #14213D;
+    padding:.5rem 0;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding:.8rem 3rem;
+    background: #FCA311;
+    color: #14213D;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: #14213D;
+    color: #E5E5E5;
+    letter-spacing: .2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    body{
+        padding: 0%;
+    }
+    #menu{
+        display: initial;
+    }
+    header{
+        left: -120%;
+    }
+    header.active{
+        left: 0%;
+    }
 }
