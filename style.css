@@ -20,7 +20,7 @@ html{
 }
 
 body{
-    background: #E5E5E5;
+    background:url(https://th.bing.com/th/id/OIP.eN_aCSqQj2pO_DvxLVx-fAHaE7?rs=1&pid=ImgDetMain);
     padding-left: 30rem;
 }
 
@@ -140,14 +140,19 @@ section{
 }
 
 .banner .content h3{
-    font-size: 4.5rem;
+    font-size: 3.9rem;
     color: #14213D;
     text-transform: uppercase;
 }
 
 .banner .content h3 span{
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: #FCA311;
+    font-family: sans-serif;
+    text-shadow: -1px 1px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
     text-transform: uppercase;
 }
 
@@ -192,11 +197,57 @@ section{
     text-transform: uppercase;
 }
 
+.about .row-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
 
+.about .row-1 .image{
+    flex: 1 1 25rem;
+}
 
+.about .row-1 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1rem solid white;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
 
+.about .row-1 .content{
+    flex:1 1 50rem;
+}
 
+.about .row-1 .content h3{
+    color: black;
+    font-size: 3.5rem;
+}
 
+.about .row-1 .content p{
+    color: #14213D;
+    font-size: 1.7rem;
+    padding: .5rem 0;
+}
+
+.about .row-1 .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.about .row-1 .content .box-container .box{
+    flex: 1 1 20rem;
+}
+
+.about .row-1 .content .box-container .box span{
+    color: #FCA311;
+    font-weight: bolder;
+    font-size: 1.9rem;
+}
 
 
 
