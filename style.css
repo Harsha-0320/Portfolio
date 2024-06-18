@@ -180,7 +180,17 @@ section{
     letter-spacing: .2rem;
 }
 
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: #14213D;
+    text-transform: uppercase;
+}
 
+.heading span{
+    color: #FCA311;
+    text-transform: uppercase;
+}
 
 
 
