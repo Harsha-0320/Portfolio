@@ -183,7 +183,7 @@ section{
 
 .heading{
     font-size: 4.5rem;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 1rem;
     color: #3f3273;
     text-transform: uppercase;
@@ -437,17 +437,132 @@ section{
     font-size: 19px;
 }
 
+/************internship****************/
+.intern{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.intern .box2{
+    flex: 1 1 30rem;
+    text-align: center;
+    padding: 2rem;
+    background: #E5E5E5;
+    border-radius: .5rem;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
 
+.intern .box2 i{
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    color: #000000;
+    background: transparent;
+    border-radius: 50%;
+    padding: 3px;
+}
 
+.intern .box2 h2{
+    font-size: 2.5rem;
+    color: #000000;
+    padding-top: 1rem;
+    text-decoration: underline;
+}
 
+.intern .box2 h3{
+    font-size: 1.8rem;
+    color: #3c96d6;
+    padding: .5rem;
+}
 
+.intern .box2 h4{
+    font-size: 1.6rem;
+    color: #3c96d6;
+    padding: .5rem;
+}
 
+.intern .box2 p{
+    font-size: 1.4rem;
+    color: #3f3273;
+    padding-top: .5rem;
+}
 
+/*********scholarship***************/
+.contents1{
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #E5E5E5;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background-color: white;
+    margin-bottom: 20px;
+}
 
+.contents1 .box1{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #E5E5E5;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
 
+.contents1 .box1:hover{
+    box-shadow: 0px 3px 12px 0px #E5E5E5;
+    border: 1px solid transparent;
+}
 
+.contents1 .box1::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #3c96d6;
+    border: 2px solid white;
+}
 
+.contents1 .box1 h4{
+    position: relative;
+    color: #3c96d6;
+    font-size: 17px;
+}
+
+.contents1 .box1 h3{
+    font-size: 23px;
+    padding: 10px 0 6px;
+    color: #000000;
+}
+
+.contents1 .box1 p{
+    line-height: 1.4;
+    color: #3f3273;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+.contents1 .box1 p span{
+    line-height: 1.4;
+    color: #3f3273;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.contents1 .box1 .modules{
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.contents1 .box1 .sessions{
+    font-size: 15px;
+    padding-left: 15px;
+}
 
 
 
