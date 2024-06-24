@@ -24,7 +24,6 @@
                 <a href="#internship"><i class="fa fa-file-code-o" aria-hidden="true"></i>&nbsp;Internship</a>
                 <a href="#scholarship"><i class="fa fa-star-o" aria-hidden="true"></i>&nbsp;Scholarship</a>
                 <a href="#contact"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;Contact</a>
-                <a href="#resume"><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;Resume</a>
             </nav>
 
             <div class="follow">
@@ -61,26 +60,25 @@
                 </div>
     
                 <div class="content">
-                    <h3>my name is harsha bhondwe.</h3>
-                    <p>Enthusiastic and adaptable recent graduate with a keen interest in front-end development, Android 
-                        development, and web design. Possessing a passionate drive to continuously learn and grow, I approach 
-                        each experience with an open mind and a commitment to extracting valuable knowledge. As a fresher, I am 
-                        eager to channel my energy and enthusiasm into delivering impactful results in every endeavor.</p>
+                    <h3>My Name Is Harsha Bhondwe.</h3>
+                    <p>Enthusiastic And Adaptable Recent Graduate With A Keen Interest In Front-End Development, Android Development, And Web Design. 
+                        Possessing A Passionate Drive To Continuously Learn And Grow, I Approach Each Experience With An Open Mind And A Commitment To Extracting Valuable Knowledge. 
+                        As A Fresher, I Am Eager To Channel My Energy And Enthusiasm Into Delivering Impactful Results In Every Endeavor.</p>
                         <div class="box-container">
                             <div class="box">
-                                <p><span> age : </span> 20 </p>
-                                <p><span> gender : </span> female </p>
-                                <p><span> language : </span> english , hindi , marathi </p>
-                                <p><span> work : </span> java developer , front-end developer , android developer </p>
+                                <p><span> Age : </span> 20 </p>
+                                <p><span> Gender : </span> Female </p>
+                                <p><span> Language : </span> English, Hindi, Marathi </p>
+                                <p><span> Work : </span> Java Developer , Front-End Developer , Android Developer </p>
                             </div>
                             <div class="box">
-                                <p><span> phone : </span> +91 9892625266 </p>
-                                <p><span> email : </span> bhondweharsha2010@gmail.com </p>
-                                <p><span> country : </span> india </p>
+                                <p><span> Phone : </span> +91 9892625266 </p>
+                                <p><span> Email : </span> bhondweharsha2010@gmail.com </p>
+                                <p><span> Country : </span> India </p>
                             </div>
                         </div>
-                        <a href="#resume" class="btn">download CV</a>
-                        <a href="#" class="btn">hire me</a>
+                        <a href="/resume/harsha_resume.pdf" download="" class="btn">download CV</a>
+                        <a href="#contact" class="btn">hire me</a>
                 </div>
             </div>
            
@@ -262,7 +260,7 @@
                 </div>
 
                 <div class="box2">
-                    <h2>Prodigy</h2>
+                    <h2>Prodigy Infotech</h2>
                     <h3>Web Development Intern</h3>
                     <h4>May 2024 - June 2024</h4>
                     <p>Virtual Web Development Internship helped me to gain knowledge in the field of web development. It helped me to create 3 projects which were about Automobile Landing Page, Responsive Stopwatch and Tic-Tac-Toe website.
@@ -313,5 +311,66 @@
                     </p>
                 </div>
         </section>
+
+        <!---------------------Contact me--------------------->
+        <section class="contact" id="contact">
+            <h1 class="heading"> contact <span> me </span></h1>
+
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <h3>my email</h3>
+                    <p>bhondweharsha2010@gmail.com</p>
+                </div>
+
+                <div class="icons">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h3>my number</h3>
+                    <p>+91 9892625266</p>
+                </div>
+
+                <div class="icons">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <h3>my address</h3>
+                    <p>Mumbai, Maharashtra</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <form action="" onsubmit="sendEmail(); reset(); return false;">
+                    <input type="text" placeholder="name" class="box">
+                    <input type="email" placeholder="email" class="box" id="email">
+                    <input type="number" placeholder="number" class="box">
+
+                    <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="btn" value="send message">
+                </form>
+            </div>
+        </section>
+
+        <!---------------------footer section------------------>
+        <footer> created by <span> miss. harsha bhondwe</span> | all rights reserved! </footer>
+
+        <!------------------------------>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script>
+            function sendEmail(){
+                Email.send({
+                Host: "smtp.gmail.com",
+                Username: "ahsh@gmail.com",
+                Password: "password",
+                To: 'reciever@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "Sending Email using javascript",
+                Body: "Well that was easy!!",
+            })
+                .then(function (message) {
+                    alert("mail sent successfully")
+                });
+        }
+        </script>
     </body>
 </html>
