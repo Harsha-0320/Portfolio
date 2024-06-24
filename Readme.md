@@ -2,7 +2,7 @@
 Welcome to my Personal portfolio website! This repository contains the source code for my personal portfolio website showcasing my projects, skills, education, internship and scholarship.
 
 ## About
-This website serves as a platform to showcase my work, skills, and experiences in the field of Android Development. It features a collection of projects I have worked on, along with details about my education and contact information.
+This website serves as a platform to showcase my work, skills, and experiences in the field of Android Development, Web development. It features a collection of projects I have worked on, along with details about my education and contact information.
 
 ## Features
 - About Me: A professional introduction to who I am and my interests. 
