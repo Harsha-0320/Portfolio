@@ -17,7 +17,6 @@
         <header>
             <a href="#" class="logo"><span>Harsha</span> Bhondwe</a>
             
-            <i class="fa fa-times" onclick="hideMenu()"></i>
             <nav class="navbar">
                 <a href="#banner"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
                 <a href="#about"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;About</a>
@@ -340,14 +339,15 @@
             </div>
 
             <div class="row">
-                <form action="" onsubmit="sendEmail(); reset(); return false;">
-                    <input type="text" placeholder="name" class="box">
-                    <input type="email" placeholder="email" class="box" id="email">
-                    <input type="number" placeholder="number" class="box">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="text" name="name" placeholder="name" class="box">
+                    <input type="email" name="email" placeholder="email" class="box" id="email">
+                    <input type="number" name="number" placeholder="number" class="box">
 
                     <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
 
-                    <input type="submit" class="btn" value="send message">
+                    <input type="submit" class="btn" value="send message" onclick="alert('Mail sent successfully')">
                 </form>
             </div>
         </section>
@@ -356,8 +356,6 @@
         <footer> created by <span> miss. harsha bhondwe</span> | all rights reserved! </footer>
 
         <!------------------------------>
-
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
 
         <script src="script.js"></script>
     </body>
