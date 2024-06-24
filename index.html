@@ -13,8 +13,11 @@
     <body>
 
         <!----------------------------------------Sidebar Section---------------------------------------------->
+        <i class="fa fa-bars" id="menu-bars"></i>
         <header>
             <a href="#" class="logo"><span>Harsha</span> Bhondwe</a>
+            
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <nav class="navbar">
                 <a href="#banner"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
                 <a href="#about"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;About</a>
@@ -356,21 +359,6 @@
 
         <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-        <script>
-            function sendEmail(){
-                Email.send({
-                Host: "smtp.gmail.com",
-                Username: "ahsh@gmail.com",
-                Password: "password",
-                To: 'reciever@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: "Sending Email using javascript",
-                Body: "Well that was easy!!",
-            })
-                .then(function (message) {
-                    alert("mail sent successfully")
-                });
-        }
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
