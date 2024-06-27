@@ -74,7 +74,6 @@
                                 <p><span> Work : </span> Java Developer , Front-End Developer , Android Developer </p>
                             </div>
                             <div class="box">
-                                <p><span> Phone : </span> +91 9892625266 </p>
                                 <p><span> Email : </span> bhondweharsha2010@gmail.com </p>
                                 <p><span> Country : </span> India </p>
                             </div>
@@ -333,15 +332,14 @@
             </div>
 
             <div class="row">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="52c92641-a9db-493c-9ee3-21c2aec44848">
-                    <input type="text" name="name" placeholder="name" class="box">
-                    <input type="email" name="email" placeholder="email" class="box" id="email">
-                    <input type="number" name="number" placeholder="number" class="box">
+                <form action="" method="GET">
+                    <!--<input type="hidden" name="access_key" value="52c92641-a9db-493c-9ee3-21c2aec44848">-->
+                    <input type="text" name="name" id="name" placeholder="name" class="box"/>
+                    <input type="email" name="email" placeholder="email" class="box" id="email"/>
+                    <input type="number" name="number" id="number" placeholder="number" class="box"/>
+                    <textarea name="" placeholder="message" id="message" cols="30" rows="10"></textarea>
 
-                    <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
-
-                    <input type="submit" class="btn" value="send message" onclick="alert('Mail sent successfully')">
+                    <input type="submit" class="btn" value="send message" onclick="sendMail()">
                 </form>
             </div>
         </section>
@@ -349,8 +347,18 @@
         <!---------------------footer section------------------>
         <footer> created by <span> miss. harsha bhondwe</span> | all rights reserved! </footer>
 
-        <!------------------------------>
+        <!------------------------------
 
+        
+        <script src="index.js"></script>-->
         <script src="script.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("P19cH2y1FzZ3ZVDM_");
+        })();
+        </script>
     </body>
 </html>
