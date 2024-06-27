@@ -326,7 +326,7 @@ section{
 .row:hover .layer{
     height: 100%;
 }
-/***************8skills********************/
+/***************skills********************/
 .container{
     box-sizing: border-box;
     width: 100%;
@@ -572,7 +572,9 @@ section{
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
+    flex: 1 1 40rem;
     padding-bottom: 2rem;
+    align-items: center;
 }
 
 .contact .icons-container .icons{
@@ -668,6 +670,10 @@ section{
     font-size: 3rem;
     cursor: pointer;
     display: none;
+}
+
+#msg{
+    font-size: 1.7rem;
 }
 
 @media(max-width:991px){
