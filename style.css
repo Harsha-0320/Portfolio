@@ -271,6 +271,7 @@ section{
 .row img{
     width: 100%;
     border-radius: 8px;
+    height: 300px;
     display: block;
     transition: transform 0.5s;
 }
